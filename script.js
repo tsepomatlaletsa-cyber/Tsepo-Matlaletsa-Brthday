@@ -88,7 +88,7 @@ window.onclick = (event) => {
   if (event.target === modal) modal.style.display = "none";
 };
 
-const music = new Audio("birthday_song.mp3");
+const music = new Audio("julio iglesias - when i need u.mp3");
 
 document.getElementById("playMusic").addEventListener("click", () => {
   music.play();
