@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Tshepo 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="julio iglesias - when i need u.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1>🎂 Happy Birthday Tshepo! 🎉</h1>
+    <p>Celebrating life, growth, and blessings 🙏</p>
+    <button id="openMessage">💌 Open My Birthday Note</button>
+
+    <!-- Slideshow Gallery -->
+    <div class="slideshow">
+      <div class="slides fade">
+        <img src="ju.png" alt="Picture 1">
+        <div class="caption">🔥 Keep shining bright</div>
+      </div>
+      <div class="slides fade">
+        <img src="talenty.jpg" alt="Picture 2">
+        <div class="caption">💪 Stronger every year</div>
+      </div>
+      <div class="slides fade">
+        <img src="julio.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="matlal.jpg" alt="Picture 3">
+        <div class="caption">you are the best</div>
+      </div>
+      <div class="slides fade">
+        <img src="IMG_20210521_134052.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="IMG_20210606_112927.jpg" alt="Picture 3">
+        <div class="caption">You are a good person</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16228625938104109.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16228628264190118.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="c99d8fe0536df83cc0606d0366bafaf4.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16228643318382914.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16228643532139759.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16238617557229863.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="FB_IMG_16906533172065852.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+      <div class="slides fade">
+        <img src="1672507019240.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="InShot_20210619_214410559.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="InShot_20210629_124308151.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="InShot_20220118_070506396.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG-20221210-WA0107.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG_20210706_105022.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG_20220118_062148.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG_20220324_140115.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG_20220408_123017.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="IMG_20230912_134053.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="mp.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="1672057457141.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+       <div class="slides fade">
+        <img src="20230213145046__MG_1279~3.jpg" alt="Picture 3">
+        <div class="caption">🚀 Future is yours</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup Birthday Message -->
+  <div id="birthdayMessage" class="modal">
+    <div class="modal-content">
+      <span id="closeMessage">&times;</span>
+      <h2>💌 A Note From Me</h2>
+      <p>
+        Today, as I celebrate another year of life, I want to pause and give thanks.  
+        I am grateful to God for the gift of waking up each day, for the strength to keep going,  
+        and for the chance to grow into the person I am becoming.  
+        Life has not always been easy, but every challenge has shaped me,  
+        every lesson has built me, and every blessing has lifted me higher.  
+        <br><br>
+        I thank my family and friends who continue to stand by me, encourage me,  
+        and remind me that I am never alone. I thank myself too — for not giving up,  
+        for pushing through hard days, and for daring to dream bigger.  
+        I have come this far, and I know the best is still ahead of me.  
+        <br><br>
+        This new year of my life is not just about growing older, but about growing wiser,  
+        stronger, kinder, and closer to the person I am meant to be.  
+        To life, to love, and to the journey ahead — thank you, God, for the gift of being alive today. 🙏
+      </p>
+    </div>
+  </div>
+
+  <!-- Balloons -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
