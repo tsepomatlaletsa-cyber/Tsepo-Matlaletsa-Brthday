@@ -87,3 +87,11 @@ closeBtn.onclick = () => modal.style.display = "none";
 window.onclick = (event) => {
   if (event.target === modal) modal.style.display = "none";
 };
+
+const music = new Audio("birthday_song.mp3");
+
+document.getElementById("playMusic").addEventListener("click", () => {
+  music.play();
+  document.getElementById("playMusic").style.display = "none"; // hide button after play
+});
+
